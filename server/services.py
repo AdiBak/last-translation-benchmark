@@ -201,7 +201,7 @@ async def call_llm(prompt: str | list[dict], model: str = "google/gemini-3.5-fla
         model = "cohere/command-a-03-2025"
 
     output_str = None
-    if model in {"cohere/command-a-plus-05-2026", "cohere/tiny-aya-global"}:
+    if model in {"cohere/command-a-plus-05-2026", "cohere/tiny-aya-global", "cohere/north-small-translate-09-2026"}:
         response = await COHERE_CLIENT.chat(
             model=model.removeprefix("cohere/"),
             messages=prompt # type: ignore

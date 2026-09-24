@@ -4,7 +4,7 @@ import os
 import tqdm
 import iso639
 
-os.chdir(os.path.dirname(__file__)+"/../..")
+os.chdir(os.path.dirname(__file__)+"/..")
 
 from last_translation_benchmark.utils import get_config, save_compact_json
 from last_translation_benchmark.languages import LANGUAGES

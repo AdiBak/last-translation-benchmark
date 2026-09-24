@@ -32,6 +32,7 @@ dev = [
     "lingtypology >= 0.8",
     "openai >= 2.0",
     "compact-json >= 1.8",
+    "python-iso639 >= 2026",
 ]
 
 [project.urls]
