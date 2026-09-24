@@ -50,21 +50,20 @@
           <select id="model-size" required style="display: block; margin-top: 5px; width: 100%; padding: 8px;">
             <option value="" disabled selected>Select model size</option>
             <option value="<1B">&lt; 1B</option>
-            <option value="1B-3B">1B - 3B</option>
-            <option value="3B-10B">3B - 10B</option>
-            <option value="10B-30B">10B - 30B</option>
-            <option value="30B-100B">30B - 100B</option>
-            <option value=">100B">&gt; 100B</option>
+            <option value="<10B">&lt; 10B</option>
+            <option value="<100B">&lt; 100B</option>
+            <option value="<1T">&lt; 1T</option>
             <option value="unknown">Unknown / API</option>
           </select>
         </div>
 
         <div style="margin-bottom: 15px;">
           <label for="model-type">Model type</label>
-          <p style="font-size: 0.85em; color: #64748b; margin: 3px 0 5px 0;">Is the model open source (weights available) or closed (API only)?</p>
+          <p style="font-size: 0.85em; color: #64748b; margin: 3px 0 5px 0;">Is the model open source (code and weights), open weight, or closed (API only)?</p>
           <select id="model-type" required style="display: block; margin-top: 5px; width: 100%; padding: 8px;">
             <option value="" disabled selected>Select model type</option>
-            <option value="open">Open</option>
+            <option value="open-source">Open Source</option>
+            <option value="open-weight">Open Weight</option>
             <option value="closed">Closed</option>
           </select>
         </div>

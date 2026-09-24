@@ -135,6 +135,29 @@
       <div id="leaderboard-chart-container" style="width: 100%; height: 450px; margin-bottom: 20px; position: relative;"></div>
       <div id="leaderboard-tooltip" style="position: fixed; display: none; background: black; color: white; padding: 10px; border-radius: 4px; z-index: 10; font-size: 0.85em; max-width: 300px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); pointer-events: none; transform: translateX(-50%);"></div>
 
+      <div class="filter-container">
+        <div class="filter-group">
+          <label for="filter-size">Model size</label>
+          <select id="filter-size">
+            <option value="all">All Sizes</option>
+            <option value="1">&lt; 1B</option>
+            <option value="10">&lt; 10B</option>
+            <option value="100">&lt; 100B</option>
+            <option value="1000">&lt; 1T</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter-type">Model type</label>
+          <select id="filter-type">
+            <option value="all">All Types</option>
+            <option value="open-source">Open Source</option>
+            <option value="open-weight">Open Weight</option>
+            <option value="closed">Closed</option>
+          </select>
+        </div>
+      </div>
+
       <div id="leaderboard-content">
         Loading leaderboard data...
       </div>

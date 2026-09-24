@@ -32,6 +32,8 @@ COOKIES = {
     "ltb_token": urllib.parse.quote(get_config("LTB_SCORER_TOKEN")),
 }
 
+MODEL = "google/gemini-3.8-flash"
+
 async def main():
     async def process_sub(sub_obj_lb):
         sub_obj = id_to_submission.get(sub_obj_lb["id"])
@@ -52,7 +54,7 @@ async def main():
         rule_results = []
         for rule in sub_obj["verification_rules"]:
             prompt = get_prompt_verify(sub_obj["source_text"], sub_obj_lb["translation"], rule, sub_obj["source_media"])
-            payload = {"model": "google/gemini-3.1-pro-preview", "prompt": prompt, "cache": True}
+            payload = {"model": MODEL, "prompt": prompt, "cache": True}
             if sub_obj["source_media"]:
                 payload["source_media"] = sub_obj["source_media"]
             
@@ -105,6 +107,8 @@ async def main():
         ])
     else:
         lb_info["score"] = 0.0
+
+    lb_info["scorer"] = MODEL
     db.execute("UPDATE leaderboard SET status = 'scored', info = ?, submissions = ? WHERE id = ?", (json.dumps(lb_info), json.dumps(lb_subs), args.uid)) # type: ignore
     db.commit()
 

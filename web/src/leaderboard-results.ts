@@ -12,6 +12,8 @@ async function loadLeaderboard() {
         const filterMode = $('#filter-mode').val() as string;
         const filterTag = $('#filter-tag').val() as string;
         const filterLang = $('#filter-lang').val() as string;
+        const filterSize = $('#filter-size').val() as string;
+        const filterType = $('#filter-type').val() as string;
         
         let lang1 = '';
         let lang2 = '';
@@ -36,7 +38,27 @@ async function loadLeaderboard() {
             languagesPopulated = true;
         }
         
-        const models = data.models || [];
+        let models = data.models || [];
+        models = models.filter((m: any) => {
+            const isHuman = !m.model_type || m.model_type === '';
+            if (filterSize && filterSize !== 'all' && !isHuman) {
+                let sizeVal = Infinity;
+                if (m.model_size === '<1B') sizeVal = 1;
+                else if (m.model_size === '<10B') sizeVal = 10;
+                else if (m.model_size === '<100B') sizeVal = 100;
+                else if (m.model_size === '<1T') sizeVal = 1000;
+                // legacy values
+                else if (m.model_size === '1B-3B') sizeVal = 3;
+                else if (m.model_size === '3B-10B') sizeVal = 10;
+                else if (m.model_size === '10B-30B') sizeVal = 30;
+                else if (m.model_size === '30B-100B') sizeVal = 100;
+                
+                if (sizeVal > parseInt(filterSize)) return false;
+            }
+            if (filterType && filterType !== 'all' && m.model_type !== filterType && !isHuman) return false;
+            return true;
+        });
+
         if (models.length === 0) {
             $('#leaderboard-content').html('<div class="empty">No models match the selected filters.</div>');
             $('#leaderboard-chart-container').hide();
@@ -45,7 +67,7 @@ async function loadLeaderboard() {
 
         let rows = '';
         for (const model of models) {
-            const typeStr = model.model_type ? (model.model_type === 'open' ? 'Open' : (model.model_type === 'closed' ? 'Closed' : model.model_type)) : '—';
+            const typeStr = model.model_type ? (model.model_type === 'open-source' ? 'Open Source' : (model.model_type === 'open-weight' ? 'Open Weight' : (model.model_type === 'closed' ? 'Closed' : model.model_type))) : '—';
             rows += `<tr>
                 <td class="col-name">${model.model_name || '—'}</td>
                 <td class="col-inst">${model.institution || '—'}</td>
@@ -189,7 +211,9 @@ function renderChart(models: any[]) {
         let color = 'black';
         if (m.model_type === 'closed') {
             color = '#a33';
-        } else if (m.model_type === 'open') {
+        } else if (m.model_type === 'open-weight') {
+            color = '#f90';
+        } else if (m.model_type === 'open-source') {
             color = '#2a2';
         }
         circleSvg += `<circle class="chart-point" data-idx="${i}" cx="${cx}" cy="${cy}" r="5" fill="${color}" style="cursor: pointer;" />`;
@@ -233,7 +257,7 @@ function renderChart(models: any[]) {
         const m = validModels[idx];
         const desc = m.model_description || 'No description provided.';
         const size = m.model_size || 'Unknown size';
-        const typeStr = m.model_type ? (m.model_type === 'open' ? 'Open' : (m.model_type === 'closed' ? 'Closed' : m.model_type)) : 'Unknown type';
+        const typeStr = m.model_type ? (m.model_type === 'open-source' ? 'Open Source' : (m.model_type === 'open-weight' ? 'Open Weight' : (m.model_type === 'closed' ? 'Closed' : m.model_type))) : 'Unknown type';
         const date = m.model_release || 'Unknown date';
         
         tooltip.html(`
@@ -273,6 +297,6 @@ $(async () => {
         // Not logged in, ignore
     }
 
-    $('#filter-mode, #filter-tag, #filter-lang').on('change', loadLeaderboard);
+    $('#filter-mode, #filter-tag, #filter-lang, #filter-size, #filter-type').on('change', loadLeaderboard);
     loadLeaderboard();
 });
