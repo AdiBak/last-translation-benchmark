@@ -27,17 +27,17 @@ type Payload = {
 
 const DEFAULT_MODELS = ["Gemini 3.1 Pro", "GPT-5.6 Sol", "TranslateGemma"];
 const MODEL_COLOR: Record<string, string> = {
-    "Gemini 3.1 Pro": "#111111",
-    "GPT-5.6 Sol": "#aa3333",
-    "GPT-5.6 Luna": "#884444",
-    "Gemma 4": "#227722",
-    "TranslateGemma": "#ff9900",
-    "Tower+": "#336699",
-    "Seed-X-PPO-7B": "#555577",
-    "HY-MT2": "#666688",
-    "Command A Translate": "#777799",
-    "NLLB 3.3B": "#888888",
-    "Google Translate": "#2255aa",
+    "Gemini 3.1 Pro": "#1a1a1a",
+    "GPT-5.6 Sol": "#d64545",
+    "GPT-5.6 Luna": "#7b3fa0",
+    "Gemma 4": "#2e9e4f",
+    "TranslateGemma": "#e39b12",
+    "Tower+": "#2b7de9",
+    "Seed-X-PPO-7B": "#e07a2f",
+    "HY-MT2": "#1a9a96",
+    "Command A Translate": "#c44b7a",
+    "NLLB 3.3B": "#8a6a2f",
+    "Google Translate": "#5c4ad4",
 };
 
 let payload: Payload;
@@ -63,6 +63,31 @@ function color(model: string): string {
     return MODEL_COLOR[model] || "#333333";
 }
 
+function labelWidth(text: string): number {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return text.length * 7;
+    ctx.font = "12px Inter, sans-serif";
+    return ctx.measureText(text).width;
+}
+
+function legendRows(models: string[], left: number, right: number): { model: string; x: number; y: number; bottom: number }[] {
+    const rowH = 20;
+    let x = left;
+    let y = 16;
+    const items = [];
+    for (const model of models) {
+        const itemW = 12 + 8 + labelWidth(model) + 16;
+        if (x > left && x + itemW > right) {
+            x = left;
+            y += rowH;
+        }
+        items.push({ model, x, y, bottom: y + 6 });
+        x += itemW;
+    }
+    return items;
+}
+
 function renderPhenomena() {
     const models = selectedModels();
     const minN = parseInt(String($("#min-n").val()), 10);
@@ -81,18 +106,19 @@ function renderPhenomena() {
 
     const barH = 11;
     const band = models.length * (barH + 3) + 10;
-    const padding = { top: 46, right: 24, bottom: 46, left: 220 };
     const w = chart.width() || 900;
+    const legend = legendRows(models, 12, w - 12);
+    const legendBottom = legend.length ? legend[legend.length - 1].bottom : 16;
+    const padding = { top: legendBottom + 18, right: 24, bottom: 46, left: 220 };
     const h = padding.top + padding.bottom + tags.length * band;
     const innerW = w - padding.left - padding.right;
     const scaleX = (rate: number) => padding.left + rate * innerW;
 
     let svg = `<svg width="100%" height="${h}" viewBox="0 0 ${w} ${h}" style="background:#ddd;">`;
-    models.forEach((model, index) => {
-        const x = padding.left + index * 170;
-        svg += `<rect x="${x}" y="14" width="12" height="12" fill="${color(model)}"/>`;
-        svg += `<text x="${x + 18}" y="24" font-size="12" fill="black">${esc(model)}</text>`;
-    });
+    for (const item of legend) {
+        svg += `<rect x="${item.x}" y="${item.y - 10}" width="12" height="12" fill="${color(item.model)}"/>`;
+        svg += `<text x="${item.x + 18}" y="${item.y}" font-size="12" fill="black">${esc(item.model)}</text>`;
+    }
     svg += `<line x1="${padding.left}" y1="${padding.top}" x2="${padding.left}" y2="${h - padding.bottom}" stroke="black" stroke-width="2"/>`;
     svg += `<line x1="${padding.left}" y1="${h - padding.bottom}" x2="${w - padding.right}" y2="${h - padding.bottom}" stroke="black" stroke-width="2"/>`;
     svg += `<text x="${padding.left + innerW / 2}" y="${h - 14}" text-anchor="middle" font-size="13" font-weight="bold" fill="black">Pass rate (%)</text>`;
