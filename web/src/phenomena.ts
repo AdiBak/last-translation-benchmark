@@ -99,7 +99,7 @@ function renderPhenomena() {
     const chart = $("#phenomena-chart");
     chart.empty();
     if (models.length === 0 || tags.length === 0) {
-        chart.html('<div class="empty">No phenomena match the selected filters.</div>');
+        chart.html('<div class="empty">Nothing to show for this filter.</div>');
         $("#phenomena-table").empty();
         return;
     }
@@ -192,8 +192,12 @@ function renderDirection() {
         svg += `<line x1="${padding.left - 5}" y1="${y}" x2="${padding.left}" y2="${y}" stroke="black"/>`;
         svg += `<text x="${padding.left - 8}" y="${y + 4}" text-anchor="end" font-size="12" fill="black">${Math.round(tick * 100)}</text>`;
     }
-    svg += `<text x="${w - padding.right - 150}" y="20" font-size="12" fill="black">■ Raw</text>`;
-    svg += `<text x="${w - padding.right - 90}" y="20" font-size="12" fill="#aa3333">■ Same tag mix</text>`;
+    const sameLabel = "■ Same tags";
+    const plainLabel = "■ Plain";
+    const sameX = w - padding.right - labelWidth(sameLabel);
+    const plainX = sameX - 18 - labelWidth(plainLabel);
+    svg += `<text x="${plainX}" y="20" font-size="12" fill="black">${plainLabel}</text>`;
+    svg += `<text x="${sameX}" y="20" font-size="12" fill="#aa3333">${sameLabel}</text>`;
 
     payload.directions.forEach((direction, index) => {
         const raw = payload.by_direction[direction.id]?.models[model]?.rate ?? 0;
@@ -223,7 +227,7 @@ function renderDirection() {
     }
     const heads = payload.directions.map(direction => `<th class="num">${esc(direction.label)}</th>`).join("");
     $("#direction-table").html(
-        `<p class="note">${adjusted.n_tags} tags meet the cutoff for ${esc(model)}. The number in parentheses is how many translations were scored.</p>` +
+        `<p class="note">${adjusted.n_tags} tags have at least 8 translations in every direction for ${esc(model)}. The number in parentheses is how many that is.</p>` +
         `<table class="rates"><tr><th>Phenomenon</th>${heads}</tr>${rows}</table>`
     );
 }
@@ -265,6 +269,6 @@ $(async () => {
     try {
         await main();
     } catch (error) {
-        $("#phenomena-chart").html(`<div class="empty">Failed to load phenomenon rates: ${error}</div>`);
+        $("#phenomena-chart").html(`<div class="empty">Could not load the pass rates: ${error}</div>`);
     }
 });

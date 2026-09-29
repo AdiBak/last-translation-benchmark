@@ -111,9 +111,9 @@
     <div class="card">
       <h2>Pass rate by phenomenon</h2>
       <p class="note">
-        Share of LTBv1-eval examples whose translation passes every verification rule.
-        The verifier is Gemini 3.1 Pro, the same column as Main Table 2 of the paper.
-        An example is counted under every linguistic tag it carries.
+        How often a translation passes every verification rule, on the LTBv1-eval set.
+        Gemini 3.1 Pro is the judge, same as the leaderboard.
+        An example with several tags is counted in each of them.
       </p>
       <p>
         <a href="leaderboard-results" class="btn btn-success">Model leaderboard</a>
@@ -138,12 +138,11 @@
     </div>
 
     <div class="card">
-      <h2>Direction, with the tag mix held fixed</h2>
+      <h2>By language direction</h2>
       <p class="note">
-        Other → other looks easier in the raw rates. Those 122 examples may simply carry easier phenomena.
-        The adjusted rate gives every direction the same tag mix. It averages the pass rate inside each tag,
-        weighted by how often that tag appears in LTBv1-eval. A tag is included only when the model has at least
-        8 translations in every direction.
+        Black bars are the plain pass rate. Other → other looks easier, but that set is only 122 examples and they may just be easier problems.
+        Red bars score each direction as if it had the same tags, so the comparison is fairer.
+        A tag is used only when the model has at least 8 translations of it in every direction.
       </p>
       <div class="filter-container">
         <div class="filter-group">
