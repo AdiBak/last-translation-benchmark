@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=800">
+  <title>Phenomena | Last Translation Benchmark</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 16px 0;
+      align-items: flex-end;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .filter-group label {
+      font-weight: bold;
+      font-size: 0.9em;
+      color: #475569;
+    }
+    .filter-group select {
+      padding: 6px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      width: auto;
+      margin: 0;
+    }
+    .model-checks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+    }
+    .model-checks label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .model-checks input {
+      width: auto;
+      margin: 0;
+    }
+    #phenomena-chart, #direction-chart {
+      width: 100%;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    #phenomena-tooltip {
+      position: fixed;
+      display: none;
+      background: black;
+      color: white;
+      padding: 10px;
+      border-radius: 4px;
+      z-index: 10;
+      font-size: 0.85em;
+      max-width: 280px;
+      pointer-events: none;
+      transform: translateX(-50%);
+    }
+    table.rates {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9em;
+    }
+    table.rates th, table.rates td {
+      text-align: left;
+      padding: 8px 10px;
+      color: #334155;
+    }
+    table.rates th {
+      color: #475569;
+      font-weight: 700;
+    }
+    table.rates td.num, table.rates th.num {
+      text-align: right;
+    }
+    table.rates tr:hover td {
+      background: #ddd;
+    }
+    .note {
+      color: #475569;
+      font-size: 0.95em;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" style="text-decoration:none;color:inherit;">
+      <h1><img src="assets/favicon.svg" style="height: 1em;"> Last Translation Benchmark</h1>
+    </a>
+    <div id="header-status" style="display: none; align-items: center; gap: 16px;">
+      <span class="info" title="How many times you can run the translation.">
+        <span id="quota-text"></span>
+      </span>
+      <span class="info" title="Total confirmed contributions.">
+        <span id="total-points">0</span> accepted
+      </span>
+      <span id="username-info" class="info"></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Pass rate by phenomenon</h2>
+      <p class="note">
+        Share of LTBv1-eval examples whose translation passes every verification rule.
+        The verifier is Gemini 3.1 Pro, the same column as Main Table 2 of the paper.
+        An example is counted under every linguistic tag it carries.
+      </p>
+      <p>
+        <a href="leaderboard-results" class="btn btn-success">Model leaderboard</a>
+      </p>
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Models</label>
+          <div id="model-checks" class="model-checks"></div>
+        </div>
+        <div class="filter-group">
+          <label for="min-n">Minimum examples</label>
+          <select id="min-n">
+            <option value="20">20</option>
+            <option value="30" selected>30</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <div id="phenomena-chart"></div>
+      <div id="phenomena-tooltip"></div>
+      <div id="phenomena-table"></div>
+    </div>
+
+    <div class="card">
+      <h2>Direction, with the tag mix held fixed</h2>
+      <p class="note">
+        Other → other looks easier in the raw rates. Those 122 examples may simply carry easier phenomena.
+        The adjusted rate gives every direction the same tag mix. It averages the pass rate inside each tag,
+        weighted by how often that tag appears in LTBv1-eval. A tag is included only when the model has at least
+        8 translations in every direction.
+      </p>
+      <div class="filter-container">
+        <div class="filter-group">
+          <label for="direction-model">Model</label>
+          <select id="direction-model"></select>
+        </div>
+      </div>
+      <div id="direction-chart"></div>
+      <div id="direction-table"></div>
+    </div>
+  </div>
+</body>
+</html>

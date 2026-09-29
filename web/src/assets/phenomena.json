@@ -1,0 +1,8152 @@
+{
+  "subset": "LTBv1-eval",
+  "verifier": "Gemini 3.1 Pro",
+  "n_examples": 911,
+  "directions": [
+    {
+      "id": "en→x",
+      "label": "English → other"
+    },
+    {
+      "id": "x→en",
+      "label": "Other → English"
+    },
+    {
+      "id": "x→y",
+      "label": "Other → other"
+    }
+  ],
+  "models": [
+    "Gemini 3.1 Pro",
+    "GPT-5.6 Sol",
+    "GPT-5.6 Luna",
+    "Gemma 4",
+    "TranslateGemma",
+    "Tower+",
+    "Seed-X-PPO-7B",
+    "HY-MT2",
+    "Command A Translate",
+    "NLLB 3.3B",
+    "Google Translate"
+  ],
+  "overall": {
+    "human": {
+      "pass": 910,
+      "n": 911,
+      "rate": 0.9989023051591658
+    },
+    "Gemini 3.1 Pro": {
+      "pass": 358,
+      "n": 911,
+      "rate": 0.3929747530186608
+    },
+    "GPT-5.6 Sol": {
+      "pass": 256,
+      "n": 911,
+      "rate": 0.2810098792535675
+    },
+    "GPT-5.6 Luna": {
+      "pass": 140,
+      "n": 911,
+      "rate": 0.15367727771679474
+    },
+    "Gemma 4": {
+      "pass": 65,
+      "n": 911,
+      "rate": 0.07135016465422613
+    },
+    "TranslateGemma": {
+      "pass": 44,
+      "n": 879,
+      "rate": 0.05005688282138794
+    },
+    "Tower+": {
+      "pass": 19,
+      "n": 911,
+      "rate": 0.020856201975850714
+    },
+    "Seed-X-PPO-7B": {
+      "pass": 16,
+      "n": 891,
+      "rate": 0.017957351290684626
+    },
+    "HY-MT2": {
+      "pass": 20,
+      "n": 911,
+      "rate": 0.021953896816684963
+    },
+    "Command A Translate": {
+      "pass": 6,
+      "n": 911,
+      "rate": 0.006586169045005488
+    },
+    "NLLB 3.3B": {
+      "pass": 11,
+      "n": 879,
+      "rate": 0.012514220705346985
+    },
+    "Google Translate": {
+      "pass": 7,
+      "n": 624,
+      "rate": 0.011217948717948718
+    }
+  },
+  "by_direction": {
+    "en→x": {
+      "n_examples": 144,
+      "models": {
+        "human": {
+          "pass": 144,
+          "n": 144,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 55,
+          "n": 144,
+          "rate": 0.3819444444444444
+        },
+        "GPT-5.6 Sol": {
+          "pass": 51,
+          "n": 144,
+          "rate": 0.3541666666666667
+        },
+        "GPT-5.6 Luna": {
+          "pass": 28,
+          "n": 144,
+          "rate": 0.19444444444444445
+        },
+        "Gemma 4": {
+          "pass": 17,
+          "n": 144,
+          "rate": 0.11805555555555555
+        },
+        "TranslateGemma": {
+          "pass": 16,
+          "n": 124,
+          "rate": 0.12903225806451613
+        },
+        "Tower+": {
+          "pass": 6,
+          "n": 144,
+          "rate": 0.041666666666666664
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 6,
+          "n": 124,
+          "rate": 0.04838709677419355
+        },
+        "HY-MT2": {
+          "pass": 13,
+          "n": 144,
+          "rate": 0.09027777777777778
+        },
+        "Command A Translate": {
+          "pass": 2,
+          "n": 144,
+          "rate": 0.013888888888888888
+        },
+        "NLLB 3.3B": {
+          "pass": 6,
+          "n": 124,
+          "rate": 0.04838709677419355
+        },
+        "Google Translate": {
+          "pass": 1,
+          "n": 98,
+          "rate": 0.01020408163265306
+        }
+      }
+    },
+    "x→en": {
+      "n_examples": 645,
+      "models": {
+        "human": {
+          "pass": 644,
+          "n": 645,
+          "rate": 0.9984496124031008
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 235,
+          "n": 645,
+          "rate": 0.3643410852713178
+        },
+        "GPT-5.6 Sol": {
+          "pass": 154,
+          "n": 645,
+          "rate": 0.23875968992248062
+        },
+        "GPT-5.6 Luna": {
+          "pass": 78,
+          "n": 645,
+          "rate": 0.12093023255813953
+        },
+        "Gemma 4": {
+          "pass": 39,
+          "n": 645,
+          "rate": 0.06046511627906977
+        },
+        "TranslateGemma": {
+          "pass": 23,
+          "n": 644,
+          "rate": 0.03571428571428571
+        },
+        "Tower+": {
+          "pass": 10,
+          "n": 645,
+          "rate": 0.015503875968992248
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 9,
+          "n": 645,
+          "rate": 0.013953488372093023
+        },
+        "HY-MT2": {
+          "pass": 5,
+          "n": 645,
+          "rate": 0.007751937984496124
+        },
+        "Command A Translate": {
+          "pass": 4,
+          "n": 645,
+          "rate": 0.006201550387596899
+        },
+        "NLLB 3.3B": {
+          "pass": 5,
+          "n": 644,
+          "rate": 0.007763975155279503
+        },
+        "Google Translate": {
+          "pass": 4,
+          "n": 450,
+          "rate": 0.008888888888888889
+        }
+      }
+    },
+    "x→y": {
+      "n_examples": 122,
+      "models": {
+        "human": {
+          "pass": 122,
+          "n": 122,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 68,
+          "n": 122,
+          "rate": 0.5573770491803278
+        },
+        "GPT-5.6 Sol": {
+          "pass": 51,
+          "n": 122,
+          "rate": 0.4180327868852459
+        },
+        "GPT-5.6 Luna": {
+          "pass": 34,
+          "n": 122,
+          "rate": 0.2786885245901639
+        },
+        "Gemma 4": {
+          "pass": 9,
+          "n": 122,
+          "rate": 0.07377049180327869
+        },
+        "TranslateGemma": {
+          "pass": 5,
+          "n": 111,
+          "rate": 0.04504504504504504
+        },
+        "Tower+": {
+          "pass": 3,
+          "n": 122,
+          "rate": 0.02459016393442623
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 122,
+          "rate": 0.00819672131147541
+        },
+        "HY-MT2": {
+          "pass": 2,
+          "n": 122,
+          "rate": 0.01639344262295082
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 122,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 111,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 2,
+          "n": 76,
+          "rate": 0.02631578947368421
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "tag": "Metaphor",
+      "group": "Non-compositional",
+      "n": 292,
+      "models": {
+        "human": {
+          "pass": 291,
+          "n": 292,
+          "rate": 0.9965753424657534
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 86,
+          "n": 292,
+          "rate": 0.2945205479452055
+        },
+        "GPT-5.6 Sol": {
+          "pass": 64,
+          "n": 292,
+          "rate": 0.2191780821917808
+        },
+        "GPT-5.6 Luna": {
+          "pass": 28,
+          "n": 292,
+          "rate": 0.0958904109589041
+        },
+        "Gemma 4": {
+          "pass": 16,
+          "n": 292,
+          "rate": 0.0547945205479452
+        },
+        "TranslateGemma": {
+          "pass": 18,
+          "n": 285,
+          "rate": 0.06315789473684211
+        },
+        "Tower+": {
+          "pass": 4,
+          "n": 292,
+          "rate": 0.0136986301369863
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 6,
+          "n": 292,
+          "rate": 0.02054794520547945
+        },
+        "HY-MT2": {
+          "pass": 4,
+          "n": 292,
+          "rate": 0.0136986301369863
+        },
+        "Command A Translate": {
+          "pass": 3,
+          "n": 292,
+          "rate": 0.010273972602739725
+        },
+        "NLLB 3.3B": {
+          "pass": 4,
+          "n": 285,
+          "rate": 0.014035087719298246
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 211,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 14,
+          "models": {
+            "human": {
+              "pass": 14,
+              "n": 14,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "GPT-5.6 Sol": {
+              "pass": 5,
+              "n": 14,
+              "rate": 0.35714285714285715
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 14,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "TranslateGemma": {
+              "pass": 5,
+              "n": 14,
+              "rate": 0.35714285714285715
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 14,
+              "rate": 0.07142857142857142
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 255,
+          "models": {
+            "human": {
+              "pass": 254,
+              "n": 255,
+              "rate": 0.996078431372549
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 76,
+              "n": 255,
+              "rate": 0.2980392156862745
+            },
+            "GPT-5.6 Sol": {
+              "pass": 51,
+              "n": 255,
+              "rate": 0.2
+            },
+            "GPT-5.6 Luna": {
+              "pass": 25,
+              "n": 255,
+              "rate": 0.09803921568627451
+            },
+            "Gemma 4": {
+              "pass": 13,
+              "n": 255,
+              "rate": 0.050980392156862744
+            },
+            "TranslateGemma": {
+              "pass": 11,
+              "n": 254,
+              "rate": 0.04330708661417323
+            },
+            "Tower+": {
+              "pass": 3,
+              "n": 255,
+              "rate": 0.011764705882352941
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 5,
+              "n": 255,
+              "rate": 0.0196078431372549
+            },
+            "HY-MT2": {
+              "pass": 3,
+              "n": 255,
+              "rate": 0.011764705882352941
+            },
+            "Command A Translate": {
+              "pass": 2,
+              "n": 255,
+              "rate": 0.00784313725490196
+            },
+            "NLLB 3.3B": {
+              "pass": 3,
+              "n": 254,
+              "rate": 0.011811023622047244
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 186,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 23,
+          "models": {
+            "human": {
+              "pass": 23,
+              "n": 23,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 9,
+              "n": 23,
+              "rate": 0.391304347826087
+            },
+            "GPT-5.6 Sol": {
+              "pass": 8,
+              "n": 23,
+              "rate": 0.34782608695652173
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 23,
+              "rate": 0.13043478260869565
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 23,
+              "rate": 0.08695652173913043
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 17,
+              "rate": 0.11764705882352941
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 23,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 23,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 23,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 23,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 14,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Cultural Artifact",
+      "group": "Knowledge",
+      "n": 267,
+      "models": {
+        "human": {
+          "pass": 267,
+          "n": 267,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 71,
+          "n": 267,
+          "rate": 0.26591760299625467
+        },
+        "GPT-5.6 Sol": {
+          "pass": 47,
+          "n": 267,
+          "rate": 0.1760299625468165
+        },
+        "GPT-5.6 Luna": {
+          "pass": 24,
+          "n": 267,
+          "rate": 0.0898876404494382
+        },
+        "Gemma 4": {
+          "pass": 15,
+          "n": 267,
+          "rate": 0.056179775280898875
+        },
+        "TranslateGemma": {
+          "pass": 12,
+          "n": 260,
+          "rate": 0.046153846153846156
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 267,
+          "rate": 0.00749063670411985
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 3,
+          "n": 267,
+          "rate": 0.011235955056179775
+        },
+        "HY-MT2": {
+          "pass": 3,
+          "n": 267,
+          "rate": 0.011235955056179775
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 267,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 1,
+          "n": 260,
+          "rate": 0.0038461538461538464
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 205,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 13,
+          "models": {
+            "human": {
+              "pass": 13,
+              "n": 13,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 13,
+              "rate": 0.23076923076923078
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 13,
+              "rate": 0.3076923076923077
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 13,
+              "rate": 0.23076923076923078
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 13,
+              "rate": 0.15384615384615385
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 13,
+              "rate": 0.07692307692307693
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 224,
+          "models": {
+            "human": {
+              "pass": 224,
+              "n": 224,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 53,
+              "n": 224,
+              "rate": 0.23660714285714285
+            },
+            "GPT-5.6 Sol": {
+              "pass": 33,
+              "n": 224,
+              "rate": 0.14732142857142858
+            },
+            "GPT-5.6 Luna": {
+              "pass": 15,
+              "n": 224,
+              "rate": 0.06696428571428571
+            },
+            "Gemma 4": {
+              "pass": 10,
+              "n": 224,
+              "rate": 0.044642857142857144
+            },
+            "TranslateGemma": {
+              "pass": 9,
+              "n": 224,
+              "rate": 0.04017857142857143
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 224,
+              "rate": 0.008928571428571428
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 3,
+              "n": 224,
+              "rate": 0.013392857142857142
+            },
+            "HY-MT2": {
+              "pass": 3,
+              "n": 224,
+              "rate": 0.013392857142857142
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 224,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 224,
+              "rate": 0.004464285714285714
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 173,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 30,
+          "models": {
+            "human": {
+              "pass": 30,
+              "n": 30,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 15,
+              "n": 30,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 10,
+              "n": 30,
+              "rate": 0.3333333333333333
+            },
+            "GPT-5.6 Luna": {
+              "pass": 6,
+              "n": 30,
+              "rate": 0.2
+            },
+            "Gemma 4": {
+              "pass": 3,
+              "n": 30,
+              "rate": 0.1
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 23,
+              "rate": 0.08695652173913043
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 30,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 30,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 30,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 30,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 23,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 22,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Polysemy",
+      "group": "Sense",
+      "n": 246,
+      "models": {
+        "human": {
+          "pass": 246,
+          "n": 246,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 102,
+          "n": 246,
+          "rate": 0.4146341463414634
+        },
+        "GPT-5.6 Sol": {
+          "pass": 71,
+          "n": 246,
+          "rate": 0.2886178861788618
+        },
+        "GPT-5.6 Luna": {
+          "pass": 34,
+          "n": 246,
+          "rate": 0.13821138211382114
+        },
+        "Gemma 4": {
+          "pass": 17,
+          "n": 246,
+          "rate": 0.06910569105691057
+        },
+        "TranslateGemma": {
+          "pass": 9,
+          "n": 243,
+          "rate": 0.037037037037037035
+        },
+        "Tower+": {
+          "pass": 6,
+          "n": 246,
+          "rate": 0.024390243902439025
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 4,
+          "n": 245,
+          "rate": 0.0163265306122449
+        },
+        "HY-MT2": {
+          "pass": 4,
+          "n": 246,
+          "rate": 0.016260162601626018
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 246,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 2,
+          "n": 243,
+          "rate": 0.00823045267489712
+        },
+        "Google Translate": {
+          "pass": 1,
+          "n": 190,
+          "rate": 0.005263157894736842
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 41,
+          "models": {
+            "human": {
+              "pass": 41,
+              "n": 41,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 16,
+              "n": 41,
+              "rate": 0.3902439024390244
+            },
+            "GPT-5.6 Sol": {
+              "pass": 17,
+              "n": 41,
+              "rate": 0.4146341463414634
+            },
+            "GPT-5.6 Luna": {
+              "pass": 8,
+              "n": 41,
+              "rate": 0.1951219512195122
+            },
+            "Gemma 4": {
+              "pass": 4,
+              "n": 41,
+              "rate": 0.0975609756097561
+            },
+            "TranslateGemma": {
+              "pass": 4,
+              "n": 40,
+              "rate": 0.1
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 41,
+              "rate": 0.04878048780487805
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 40,
+              "rate": 0.025
+            },
+            "HY-MT2": {
+              "pass": 3,
+              "n": 41,
+              "rate": 0.07317073170731707
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 41,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 2,
+              "n": 40,
+              "rate": 0.05
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 34,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 180,
+          "models": {
+            "human": {
+              "pass": 180,
+              "n": 180,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 68,
+              "n": 180,
+              "rate": 0.37777777777777777
+            },
+            "GPT-5.6 Sol": {
+              "pass": 43,
+              "n": 180,
+              "rate": 0.2388888888888889
+            },
+            "GPT-5.6 Luna": {
+              "pass": 17,
+              "n": 180,
+              "rate": 0.09444444444444444
+            },
+            "Gemma 4": {
+              "pass": 11,
+              "n": 180,
+              "rate": 0.06111111111111111
+            },
+            "TranslateGemma": {
+              "pass": 3,
+              "n": 179,
+              "rate": 0.01675977653631285
+            },
+            "Tower+": {
+              "pass": 3,
+              "n": 180,
+              "rate": 0.016666666666666666
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 3,
+              "n": 180,
+              "rate": 0.016666666666666666
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 180,
+              "rate": 0.005555555555555556
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 180,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 179,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 1,
+              "n": 136,
+              "rate": 0.007352941176470588
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 25,
+          "models": {
+            "human": {
+              "pass": 25,
+              "n": 25,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 18,
+              "n": 25,
+              "rate": 0.72
+            },
+            "GPT-5.6 Sol": {
+              "pass": 11,
+              "n": 25,
+              "rate": 0.44
+            },
+            "GPT-5.6 Luna": {
+              "pass": 9,
+              "n": 25,
+              "rate": 0.36
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 25,
+              "rate": 0.08
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 24,
+              "rate": 0.08333333333333333
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 25,
+              "rate": 0.04
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Variant Specifics",
+      "group": "Non-monolingual",
+      "n": 179,
+      "models": {
+        "human": {
+          "pass": 179,
+          "n": 179,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 93,
+          "n": 179,
+          "rate": 0.5195530726256983
+        },
+        "GPT-5.6 Sol": {
+          "pass": 61,
+          "n": 179,
+          "rate": 0.3407821229050279
+        },
+        "GPT-5.6 Luna": {
+          "pass": 31,
+          "n": 179,
+          "rate": 0.17318435754189945
+        },
+        "Gemma 4": {
+          "pass": 12,
+          "n": 179,
+          "rate": 0.0670391061452514
+        },
+        "TranslateGemma": {
+          "pass": 7,
+          "n": 179,
+          "rate": 0.03910614525139665
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 179,
+          "rate": 0.00558659217877095
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 179,
+          "rate": 0.0111731843575419
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 179,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 2,
+          "n": 179,
+          "rate": 0.0111731843575419
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 179,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 38,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 7,
+          "models": {
+            "human": {
+              "pass": 7,
+              "n": 7,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 7,
+              "rate": 0.42857142857142855
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 7,
+              "rate": 0.42857142857142855
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 145,
+          "models": {
+            "human": {
+              "pass": 145,
+              "n": 145,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 73,
+              "n": 145,
+              "rate": 0.503448275862069
+            },
+            "GPT-5.6 Sol": {
+              "pass": 45,
+              "n": 145,
+              "rate": 0.3103448275862069
+            },
+            "GPT-5.6 Luna": {
+              "pass": 20,
+              "n": 145,
+              "rate": 0.13793103448275862
+            },
+            "Gemma 4": {
+              "pass": 12,
+              "n": 145,
+              "rate": 0.08275862068965517
+            },
+            "TranslateGemma": {
+              "pass": 5,
+              "n": 145,
+              "rate": 0.034482758620689655
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 145,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 2,
+              "n": 145,
+              "rate": 0.013793103448275862
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 145,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 2,
+              "n": 145,
+              "rate": 0.013793103448275862
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 145,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 29,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 27,
+          "models": {
+            "human": {
+              "pass": 27,
+              "n": 27,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 17,
+              "n": 27,
+              "rate": 0.6296296296296297
+            },
+            "GPT-5.6 Sol": {
+              "pass": 13,
+              "n": 27,
+              "rate": 0.48148148148148145
+            },
+            "GPT-5.6 Luna": {
+              "pass": 10,
+              "n": 27,
+              "rate": 0.37037037037037035
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 27,
+              "rate": 0.07407407407407407
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 27,
+              "rate": 0.037037037037037035
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Slang",
+      "group": "Knowledge",
+      "n": 136,
+      "models": {
+        "human": {
+          "pass": 135,
+          "n": 136,
+          "rate": 0.9926470588235294
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 65,
+          "n": 136,
+          "rate": 0.47794117647058826
+        },
+        "GPT-5.6 Sol": {
+          "pass": 46,
+          "n": 136,
+          "rate": 0.3382352941176471
+        },
+        "GPT-5.6 Luna": {
+          "pass": 26,
+          "n": 136,
+          "rate": 0.19117647058823528
+        },
+        "Gemma 4": {
+          "pass": 8,
+          "n": 136,
+          "rate": 0.058823529411764705
+        },
+        "TranslateGemma": {
+          "pass": 6,
+          "n": 135,
+          "rate": 0.044444444444444446
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 136,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 136,
+          "rate": 0.014705882352941176
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 136,
+          "rate": 0.007352941176470588
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 136,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 3,
+          "n": 135,
+          "rate": 0.022222222222222223
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 98,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 4,
+          "models": {
+            "human": {
+              "pass": 4,
+              "n": 4,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 4,
+              "rate": 0.75
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 123,
+          "models": {
+            "human": {
+              "pass": 122,
+              "n": 123,
+              "rate": 0.991869918699187
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 54,
+              "n": 123,
+              "rate": 0.43902439024390244
+            },
+            "GPT-5.6 Sol": {
+              "pass": 38,
+              "n": 123,
+              "rate": 0.3089430894308943
+            },
+            "GPT-5.6 Luna": {
+              "pass": 21,
+              "n": 123,
+              "rate": 0.17073170731707318
+            },
+            "Gemma 4": {
+              "pass": 8,
+              "n": 123,
+              "rate": 0.06504065040650407
+            },
+            "TranslateGemma": {
+              "pass": 6,
+              "n": 122,
+              "rate": 0.04918032786885246
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 123,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 2,
+              "n": 123,
+              "rate": 0.016260162601626018
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 123,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 123,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 3,
+              "n": 122,
+              "rate": 0.02459016393442623
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 86,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 9,
+          "models": {
+            "human": {
+              "pass": 9,
+              "n": 9,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 8,
+              "n": 9,
+              "rate": 0.8888888888888888
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 9,
+              "rate": 0.7777777777777778
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 9,
+              "rate": 0.4444444444444444
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 9,
+              "rate": 0.1111111111111111
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Conventions",
+      "group": "Knowledge",
+      "n": 126,
+      "models": {
+        "human": {
+          "pass": 126,
+          "n": 126,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 36,
+          "n": 126,
+          "rate": 0.2857142857142857
+        },
+        "GPT-5.6 Sol": {
+          "pass": 31,
+          "n": 126,
+          "rate": 0.24603174603174602
+        },
+        "GPT-5.6 Luna": {
+          "pass": 13,
+          "n": 126,
+          "rate": 0.10317460317460317
+        },
+        "Gemma 4": {
+          "pass": 10,
+          "n": 126,
+          "rate": 0.07936507936507936
+        },
+        "TranslateGemma": {
+          "pass": 9,
+          "n": 125,
+          "rate": 0.072
+        },
+        "Tower+": {
+          "pass": 5,
+          "n": 126,
+          "rate": 0.03968253968253968
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 3,
+          "n": 126,
+          "rate": 0.023809523809523808
+        },
+        "HY-MT2": {
+          "pass": 2,
+          "n": 126,
+          "rate": 0.015873015873015872
+        },
+        "Command A Translate": {
+          "pass": 2,
+          "n": 126,
+          "rate": 0.015873015873015872
+        },
+        "NLLB 3.3B": {
+          "pass": 1,
+          "n": 125,
+          "rate": 0.008
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 90,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 18,
+          "models": {
+            "human": {
+              "pass": 18,
+              "n": 18,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 18,
+              "rate": 0.2777777777777778
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 18,
+              "rate": 0.3888888888888889
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 18,
+              "rate": 0.16666666666666666
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 18,
+              "rate": 0.1111111111111111
+            },
+            "TranslateGemma": {
+              "pass": 6,
+              "n": 18,
+              "rate": 0.3333333333333333
+            },
+            "Tower+": {
+              "pass": 3,
+              "n": 18,
+              "rate": 0.16666666666666666
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 2,
+              "n": 18,
+              "rate": 0.1111111111111111
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 18,
+              "rate": 0.05555555555555555
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 18,
+              "rate": 0.05555555555555555
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 18,
+              "rate": 0.05555555555555555
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 98,
+          "models": {
+            "human": {
+              "pass": 98,
+              "n": 98,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 29,
+              "n": 98,
+              "rate": 0.29591836734693877
+            },
+            "GPT-5.6 Sol": {
+              "pass": 21,
+              "n": 98,
+              "rate": 0.21428571428571427
+            },
+            "GPT-5.6 Luna": {
+              "pass": 9,
+              "n": 98,
+              "rate": 0.09183673469387756
+            },
+            "Gemma 4": {
+              "pass": 7,
+              "n": 98,
+              "rate": 0.07142857142857142
+            },
+            "TranslateGemma": {
+              "pass": 3,
+              "n": 98,
+              "rate": 0.030612244897959183
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 98,
+              "rate": 0.02040816326530612
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 98,
+              "rate": 0.01020408163265306
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 98,
+              "rate": 0.01020408163265306
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 98,
+              "rate": 0.01020408163265306
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 98,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 70,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 10,
+          "models": {
+            "human": {
+              "pass": 10,
+              "n": 10,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 10,
+              "rate": 0.2
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 10,
+              "rate": 0.3
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "False Friends",
+      "group": "Non-monolingual",
+      "n": 109,
+      "models": {
+        "human": {
+          "pass": 109,
+          "n": 109,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 56,
+          "n": 109,
+          "rate": 0.5137614678899083
+        },
+        "GPT-5.6 Sol": {
+          "pass": 40,
+          "n": 109,
+          "rate": 0.3669724770642202
+        },
+        "GPT-5.6 Luna": {
+          "pass": 20,
+          "n": 109,
+          "rate": 0.1834862385321101
+        },
+        "Gemma 4": {
+          "pass": 7,
+          "n": 109,
+          "rate": 0.06422018348623854
+        },
+        "TranslateGemma": {
+          "pass": 3,
+          "n": 100,
+          "rate": 0.03
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 109,
+          "rate": 0.01834862385321101
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 109,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 109,
+          "rate": 0.009174311926605505
+        },
+        "Command A Translate": {
+          "pass": 1,
+          "n": 109,
+          "rate": 0.009174311926605505
+        },
+        "NLLB 3.3B": {
+          "pass": 1,
+          "n": 100,
+          "rate": 0.01
+        },
+        "Google Translate": {
+          "pass": 3,
+          "n": 57,
+          "rate": 0.05263157894736842
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 65,
+          "models": {
+            "human": {
+              "pass": 65,
+              "n": 65,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 34,
+              "n": 65,
+              "rate": 0.5230769230769231
+            },
+            "GPT-5.6 Sol": {
+              "pass": 24,
+              "n": 65,
+              "rate": 0.36923076923076925
+            },
+            "GPT-5.6 Luna": {
+              "pass": 15,
+              "n": 65,
+              "rate": 0.23076923076923078
+            },
+            "Gemma 4": {
+              "pass": 6,
+              "n": 65,
+              "rate": 0.09230769230769231
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 65,
+              "rate": 0.015384615384615385
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 65,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 65,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 65,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 65,
+              "rate": 0.015384615384615385
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 65,
+              "rate": 0.015384615384615385
+            },
+            "Google Translate": {
+              "pass": 1,
+              "n": 32,
+              "rate": 0.03125
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 36,
+          "models": {
+            "human": {
+              "pass": 36,
+              "n": 36,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 20,
+              "n": 36,
+              "rate": 0.5555555555555556
+            },
+            "GPT-5.6 Sol": {
+              "pass": 14,
+              "n": 36,
+              "rate": 0.3888888888888889
+            },
+            "GPT-5.6 Luna": {
+              "pass": 5,
+              "n": 36,
+              "rate": 0.1388888888888889
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 36,
+              "rate": 0.027777777777777776
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 27,
+              "rate": 0.037037037037037035
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 36,
+              "rate": 0.027777777777777776
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 36,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 36,
+              "rate": 0.027777777777777776
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 36,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 27,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 2,
+              "n": 19,
+              "rate": 0.10526315789473684
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Target Gap: Words to Phrases",
+      "group": "Non-monolingual",
+      "n": 91,
+      "models": {
+        "human": {
+          "pass": 91,
+          "n": 91,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 23,
+          "n": 91,
+          "rate": 0.25274725274725274
+        },
+        "GPT-5.6 Sol": {
+          "pass": 21,
+          "n": 91,
+          "rate": 0.23076923076923078
+        },
+        "GPT-5.6 Luna": {
+          "pass": 16,
+          "n": 91,
+          "rate": 0.17582417582417584
+        },
+        "Gemma 4": {
+          "pass": 3,
+          "n": 91,
+          "rate": 0.03296703296703297
+        },
+        "TranslateGemma": {
+          "pass": 4,
+          "n": 89,
+          "rate": 0.0449438202247191
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 91,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 89,
+          "rate": 0.011235955056179775
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 91,
+          "rate": 0.01098901098901099
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 91,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 2,
+          "n": 89,
+          "rate": 0.02247191011235955
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 75,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 17,
+          "models": {
+            "human": {
+              "pass": 17,
+              "n": 17,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 6,
+              "n": 17,
+              "rate": 0.35294117647058826
+            },
+            "GPT-5.6 Sol": {
+              "pass": 5,
+              "n": 17,
+              "rate": 0.29411764705882354
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 17,
+              "rate": 0.23529411764705882
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 17,
+              "rate": 0.058823529411764705
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 2,
+              "n": 15,
+              "rate": 0.13333333333333333
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 67,
+          "models": {
+            "human": {
+              "pass": 67,
+              "n": 67,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 16,
+              "n": 67,
+              "rate": 0.23880597014925373
+            },
+            "GPT-5.6 Sol": {
+              "pass": 13,
+              "n": 67,
+              "rate": 0.19402985074626866
+            },
+            "GPT-5.6 Luna": {
+              "pass": 10,
+              "n": 67,
+              "rate": 0.14925373134328357
+            },
+            "Gemma 4": {
+              "pass": 3,
+              "n": 67,
+              "rate": 0.04477611940298507
+            },
+            "TranslateGemma": {
+              "pass": 3,
+              "n": 67,
+              "rate": 0.04477611940298507
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 67,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 67,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 67,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 67,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 67,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 55,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 7,
+          "models": {
+            "human": {
+              "pass": 7,
+              "n": 7,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 7,
+              "rate": 0.42857142857142855
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 7,
+              "rate": 0.2857142857142857
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Collocation",
+      "group": "Sense",
+      "n": 83,
+      "models": {
+        "human": {
+          "pass": 82,
+          "n": 83,
+          "rate": 0.9879518072289156
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 28,
+          "n": 83,
+          "rate": 0.3373493975903614
+        },
+        "GPT-5.6 Sol": {
+          "pass": 21,
+          "n": 83,
+          "rate": 0.25301204819277107
+        },
+        "GPT-5.6 Luna": {
+          "pass": 12,
+          "n": 83,
+          "rate": 0.14457831325301204
+        },
+        "Gemma 4": {
+          "pass": 9,
+          "n": 83,
+          "rate": 0.10843373493975904
+        },
+        "TranslateGemma": {
+          "pass": 4,
+          "n": 79,
+          "rate": 0.05063291139240506
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 83,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 80,
+          "rate": 0.025
+        },
+        "HY-MT2": {
+          "pass": 2,
+          "n": 83,
+          "rate": 0.024096385542168676
+        },
+        "Command A Translate": {
+          "pass": 1,
+          "n": 83,
+          "rate": 0.012048192771084338
+        },
+        "NLLB 3.3B": {
+          "pass": 2,
+          "n": 79,
+          "rate": 0.02531645569620253
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 70,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 14,
+          "models": {
+            "human": {
+              "pass": 14,
+              "n": 14,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 14,
+              "rate": 0.35714285714285715
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 14,
+              "rate": 0.2857142857142857
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 14,
+              "rate": 0.2857142857142857
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 14,
+              "rate": 0.14285714285714285
+            },
+            "TranslateGemma": {
+              "pass": 3,
+              "n": 11,
+              "rate": 0.2727272727272727
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 14,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 11,
+              "rate": 0.09090909090909091
+            },
+            "HY-MT2": {
+              "pass": 2,
+              "n": 14,
+              "rate": 0.14285714285714285
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 14,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 11,
+              "rate": 0.09090909090909091
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 57,
+          "models": {
+            "human": {
+              "pass": 56,
+              "n": 57,
+              "rate": 0.9824561403508771
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 17,
+              "n": 57,
+              "rate": 0.2982456140350877
+            },
+            "GPT-5.6 Sol": {
+              "pass": 11,
+              "n": 57,
+              "rate": 0.19298245614035087
+            },
+            "GPT-5.6 Luna": {
+              "pass": 5,
+              "n": 57,
+              "rate": 0.08771929824561403
+            },
+            "Gemma 4": {
+              "pass": 5,
+              "n": 57,
+              "rate": 0.08771929824561403
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 57,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 57,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 57,
+              "rate": 0.017543859649122806
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 57,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 57,
+              "rate": 0.017543859649122806
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 57,
+              "rate": 0.017543859649122806
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 50,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 12,
+          "models": {
+            "human": {
+              "pass": 12,
+              "n": 12,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 6,
+              "n": 12,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 6,
+              "n": 12,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 12,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 12,
+              "rate": 0.16666666666666666
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 11,
+              "rate": 0.09090909090909091
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 12,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 12,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 12,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 12,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Style Preservation",
+      "group": "Sense",
+      "n": 66,
+      "models": {
+        "human": {
+          "pass": 66,
+          "n": 66,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 14,
+          "n": 66,
+          "rate": 0.21212121212121213
+        },
+        "GPT-5.6 Sol": {
+          "pass": 17,
+          "n": 66,
+          "rate": 0.25757575757575757
+        },
+        "GPT-5.6 Luna": {
+          "pass": 13,
+          "n": 66,
+          "rate": 0.19696969696969696
+        },
+        "Gemma 4": {
+          "pass": 9,
+          "n": 66,
+          "rate": 0.13636363636363635
+        },
+        "TranslateGemma": {
+          "pass": 4,
+          "n": 65,
+          "rate": 0.06153846153846154
+        },
+        "Tower+": {
+          "pass": 3,
+          "n": 66,
+          "rate": 0.045454545454545456
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 66,
+          "rate": 0.030303030303030304
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 66,
+          "rate": 0.015151515151515152
+        },
+        "Command A Translate": {
+          "pass": 1,
+          "n": 66,
+          "rate": 0.015151515151515152
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 65,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 55,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 53,
+          "models": {
+            "human": {
+              "pass": 53,
+              "n": 53,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 11,
+              "n": 53,
+              "rate": 0.20754716981132076
+            },
+            "GPT-5.6 Sol": {
+              "pass": 12,
+              "n": 53,
+              "rate": 0.22641509433962265
+            },
+            "GPT-5.6 Luna": {
+              "pass": 11,
+              "n": 53,
+              "rate": 0.20754716981132076
+            },
+            "Gemma 4": {
+              "pass": 6,
+              "n": 53,
+              "rate": 0.11320754716981132
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 53,
+              "rate": 0.03773584905660377
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 53,
+              "rate": 0.03773584905660377
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 53,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 53,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 53,
+              "rate": 0.018867924528301886
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 53,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 44,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 5,
+          "models": {
+            "human": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 3,
+              "n": 5,
+              "rate": 0.6
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Domain Preservation",
+      "group": "Sense",
+      "n": 65,
+      "models": {
+        "human": {
+          "pass": 65,
+          "n": 65,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 27,
+          "n": 65,
+          "rate": 0.4153846153846154
+        },
+        "GPT-5.6 Sol": {
+          "pass": 25,
+          "n": 65,
+          "rate": 0.38461538461538464
+        },
+        "GPT-5.6 Luna": {
+          "pass": 11,
+          "n": 65,
+          "rate": 0.16923076923076924
+        },
+        "Gemma 4": {
+          "pass": 3,
+          "n": 65,
+          "rate": 0.046153846153846156
+        },
+        "TranslateGemma": {
+          "pass": 2,
+          "n": 65,
+          "rate": 0.03076923076923077
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 65,
+          "rate": 0.015384615384615385
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 65,
+          "rate": 0.015384615384615385
+        },
+        "HY-MT2": {
+          "pass": 5,
+          "n": 65,
+          "rate": 0.07692307692307693
+        },
+        "Command A Translate": {
+          "pass": 1,
+          "n": 65,
+          "rate": 0.015384615384615385
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 65,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 1,
+          "n": 44,
+          "rate": 0.022727272727272728
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 32,
+          "models": {
+            "human": {
+              "pass": 32,
+              "n": 32,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 14,
+              "n": 32,
+              "rate": 0.4375
+            },
+            "GPT-5.6 Sol": {
+              "pass": 16,
+              "n": 32,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 8,
+              "n": 32,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 32,
+              "rate": 0.0625
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 32,
+              "rate": 0.0625
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 32,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 32,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 4,
+              "n": 32,
+              "rate": 0.125
+            },
+            "Command A Translate": {
+              "pass": 1,
+              "n": 32,
+              "rate": 0.03125
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 32,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 1,
+              "n": 18,
+              "rate": 0.05555555555555555
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 28,
+          "models": {
+            "human": {
+              "pass": 28,
+              "n": 28,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 12,
+              "n": 28,
+              "rate": 0.42857142857142855
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 28,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 28,
+              "rate": 0.10714285714285714
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 28,
+              "rate": 0.03571428571428571
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 28,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 28,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 28,
+              "rate": 0.03571428571428571
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 28,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 28,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 28,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 22,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 5,
+          "models": {
+            "human": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 5,
+              "rate": 0.4
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Named Entity",
+      "group": "Knowledge",
+      "n": 62,
+      "models": {
+        "human": {
+          "pass": 62,
+          "n": 62,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 20,
+          "n": 62,
+          "rate": 0.3225806451612903
+        },
+        "GPT-5.6 Sol": {
+          "pass": 20,
+          "n": 62,
+          "rate": 0.3225806451612903
+        },
+        "GPT-5.6 Luna": {
+          "pass": 9,
+          "n": 62,
+          "rate": 0.14516129032258066
+        },
+        "Gemma 4": {
+          "pass": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "TranslateGemma": {
+          "pass": 1,
+          "n": 62,
+          "rate": 0.016129032258064516
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 62,
+          "rate": 0.03225806451612903
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 62,
+          "rate": 0.016129032258064516
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 2,
+          "n": 52,
+          "rate": 0.038461538461538464
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 7,
+          "models": {
+            "human": {
+              "pass": 7,
+              "n": 7,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 7,
+              "rate": 0.42857142857142855
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 7,
+              "rate": 0.2857142857142857
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 7,
+              "rate": 0.2857142857142857
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 47,
+          "models": {
+            "human": {
+              "pass": 47,
+              "n": 47,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 12,
+              "n": 47,
+              "rate": 0.2553191489361702
+            },
+            "GPT-5.6 Sol": {
+              "pass": 13,
+              "n": 47,
+              "rate": 0.2765957446808511
+            },
+            "GPT-5.6 Luna": {
+              "pass": 5,
+              "n": 47,
+              "rate": 0.10638297872340426
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 47,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 47,
+              "rate": 0.02127659574468085
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 47,
+              "rate": 0.0425531914893617
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 47,
+              "rate": 0.02127659574468085
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 47,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 47,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 47,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 2,
+              "n": 37,
+              "rate": 0.05405405405405406
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "GPT-5.6 Sol": {
+              "pass": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Lexical Gradation",
+      "group": "Sense",
+      "n": 49,
+      "models": {
+        "human": {
+          "pass": 49,
+          "n": 49,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 14,
+          "n": 49,
+          "rate": 0.2857142857142857
+        },
+        "GPT-5.6 Sol": {
+          "pass": 10,
+          "n": 49,
+          "rate": 0.20408163265306123
+        },
+        "GPT-5.6 Luna": {
+          "pass": 4,
+          "n": 49,
+          "rate": 0.08163265306122448
+        },
+        "Gemma 4": {
+          "pass": 5,
+          "n": 49,
+          "rate": 0.10204081632653061
+        },
+        "TranslateGemma": {
+          "pass": 2,
+          "n": 49,
+          "rate": 0.04081632653061224
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 49,
+          "rate": 0.04081632653061224
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 49,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 2,
+          "n": 49,
+          "rate": 0.04081632653061224
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 49,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 1,
+          "n": 49,
+          "rate": 0.02040816326530612
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 44,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 7,
+          "models": {
+            "human": {
+              "pass": 7,
+              "n": 7,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 38,
+          "models": {
+            "human": {
+              "pass": 38,
+              "n": 38,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 11,
+              "n": 38,
+              "rate": 0.2894736842105263
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 38,
+              "rate": 0.18421052631578946
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 38,
+              "rate": 0.02631578947368421
+            },
+            "Gemma 4": {
+              "pass": 4,
+              "n": 38,
+              "rate": 0.10526315789473684
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 38,
+              "rate": 0.02631578947368421
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 38,
+              "rate": 0.02631578947368421
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 38,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 2,
+              "n": 38,
+              "rate": 0.05263157894736842
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 38,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 38,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 35,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 4,
+          "models": {
+            "human": {
+              "pass": 4,
+              "n": 4,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 4,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 4,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 4,
+              "rate": 0.75
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Irrelevant",
+      "group": "Blocker",
+      "n": 44,
+      "models": {
+        "human": {
+          "pass": 44,
+          "n": 44,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 22,
+          "n": 44,
+          "rate": 0.5
+        },
+        "GPT-5.6 Sol": {
+          "pass": 11,
+          "n": 44,
+          "rate": 0.25
+        },
+        "GPT-5.6 Luna": {
+          "pass": 5,
+          "n": 44,
+          "rate": 0.11363636363636363
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 44,
+          "rate": 0.022727272727272728
+        },
+        "TranslateGemma": {
+          "pass": 1,
+          "n": 22,
+          "rate": 0.045454545454545456
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 44,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 27,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 2,
+          "n": 44,
+          "rate": 0.045454545454545456
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 44,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 22,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 19,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 20,
+          "models": {
+            "human": {
+              "pass": 20,
+              "n": 20,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 11,
+              "n": 20,
+              "rate": 0.55
+            },
+            "GPT-5.6 Sol": {
+              "pass": 6,
+              "n": 20,
+              "rate": 0.3
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 20,
+              "rate": 0.1
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 20,
+              "rate": 0.05
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 20,
+              "rate": 0.05
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 16,
+          "models": {
+            "human": {
+              "pass": 16,
+              "n": 16,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 6,
+              "n": 16,
+              "rate": 0.375
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 16,
+              "rate": 0.125
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 16,
+              "rate": 0.1875
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 16,
+              "rate": 0.0625
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 16,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Target Gap: Morph to Words",
+      "group": "Non-monolingual",
+      "n": 42,
+      "models": {
+        "human": {
+          "pass": 42,
+          "n": 42,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 18,
+          "n": 42,
+          "rate": 0.42857142857142855
+        },
+        "GPT-5.6 Sol": {
+          "pass": 16,
+          "n": 42,
+          "rate": 0.38095238095238093
+        },
+        "GPT-5.6 Luna": {
+          "pass": 11,
+          "n": 42,
+          "rate": 0.2619047619047619
+        },
+        "Gemma 4": {
+          "pass": 5,
+          "n": 42,
+          "rate": 0.11904761904761904
+        },
+        "TranslateGemma": {
+          "pass": 1,
+          "n": 39,
+          "rate": 0.02564102564102564
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 42,
+          "rate": 0.047619047619047616
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 39,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 42,
+          "rate": 0.023809523809523808
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 42,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 39,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 13,
+          "models": {
+            "human": {
+              "pass": 13,
+              "n": 13,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 13,
+              "rate": 0.38461538461538464
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 13,
+              "rate": 0.23076923076923078
+            },
+            "GPT-5.6 Luna": {
+              "pass": 6,
+              "n": 13,
+              "rate": 0.46153846153846156
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 13,
+              "rate": 0.07692307692307693
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 13,
+              "rate": 0.07692307692307693
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 13,
+              "rate": 0.07692307692307693
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 24,
+          "models": {
+            "human": {
+              "pass": 24,
+              "n": 24,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 12,
+              "n": 24,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 10,
+              "n": 24,
+              "rate": 0.4166666666666667
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 24,
+              "rate": 0.16666666666666666
+            },
+            "Gemma 4": {
+              "pass": 4,
+              "n": 24,
+              "rate": 0.16666666666666666
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 24,
+              "rate": 0.041666666666666664
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 24,
+              "rate": 0.041666666666666664
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 5,
+          "models": {
+            "human": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 5,
+              "rate": 0.6
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Wordplay",
+      "group": "Non-compositional",
+      "n": 35,
+      "models": {
+        "human": {
+          "pass": 35,
+          "n": 35,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 17,
+          "n": 35,
+          "rate": 0.4857142857142857
+        },
+        "GPT-5.6 Sol": {
+          "pass": 13,
+          "n": 35,
+          "rate": 0.37142857142857144
+        },
+        "GPT-5.6 Luna": {
+          "pass": 5,
+          "n": 35,
+          "rate": 0.14285714285714285
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 26,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 6,
+          "models": {
+            "human": {
+              "pass": 6,
+              "n": 6,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 6,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 6,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 6,
+              "rate": 0.16666666666666666
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 26,
+          "models": {
+            "human": {
+              "pass": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 12,
+              "n": 26,
+              "rate": 0.46153846153846156
+            },
+            "GPT-5.6 Sol": {
+              "pass": 8,
+              "n": 26,
+              "rate": 0.3076923076923077
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 26,
+              "rate": 0.15384615384615385
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 26,
+              "rate": 0.038461538461538464
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 26,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 26,
+              "rate": 0.038461538461538464
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 26,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 26,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 26,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 1,
+              "n": 26,
+              "rate": 0.038461538461538464
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 17,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 3,
+          "models": {
+            "human": {
+              "pass": 3,
+              "n": 3,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 3,
+              "rate": 0.6666666666666666
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 3,
+              "rate": 0.6666666666666666
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Internet Cultural Artifact",
+      "group": "Knowledge",
+      "n": 35,
+      "models": {
+        "human": {
+          "pass": 35,
+          "n": 35,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 11,
+          "n": 35,
+          "rate": 0.3142857142857143
+        },
+        "GPT-5.6 Sol": {
+          "pass": 8,
+          "n": 35,
+          "rate": 0.22857142857142856
+        },
+        "GPT-5.6 Luna": {
+          "pass": 5,
+          "n": 35,
+          "rate": 0.14285714285714285
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "TranslateGemma": {
+          "pass": 2,
+          "n": 35,
+          "rate": 0.05714285714285714
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 28,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 4,
+          "models": {
+            "human": {
+              "pass": 4,
+              "n": 4,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 31,
+          "models": {
+            "human": {
+              "pass": 31,
+              "n": 31,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 10,
+              "n": 31,
+              "rate": 0.3225806451612903
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 31,
+              "rate": 0.22580645161290322
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 31,
+              "rate": 0.12903225806451613
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 31,
+              "rate": 0.03225806451612903
+            },
+            "TranslateGemma": {
+              "pass": 2,
+              "n": 31,
+              "rate": 0.06451612903225806
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 31,
+              "rate": 0.03225806451612903
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 31,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 31,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 31,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 31,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 24,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Gardenpath",
+      "group": "Atypical",
+      "n": 35,
+      "models": {
+        "human": {
+          "pass": 35,
+          "n": 35,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 17,
+          "n": 35,
+          "rate": 0.4857142857142857
+        },
+        "GPT-5.6 Sol": {
+          "pass": 7,
+          "n": 35,
+          "rate": 0.2
+        },
+        "GPT-5.6 Luna": {
+          "pass": 6,
+          "n": 35,
+          "rate": 0.17142857142857143
+        },
+        "Gemma 4": {
+          "pass": 6,
+          "n": 35,
+          "rate": 0.17142857142857143
+        },
+        "TranslateGemma": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 35,
+          "rate": 0.02857142857142857
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 35,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 29,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 10,
+          "models": {
+            "human": {
+              "pass": 10,
+              "n": 10,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 4,
+              "n": 10,
+              "rate": 0.4
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 10,
+              "rate": 0.2
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 10,
+              "rate": 0.2
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 10,
+              "rate": 0.1
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 20,
+          "models": {
+            "human": {
+              "pass": 20,
+              "n": 20,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 8,
+              "n": 20,
+              "rate": 0.4
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 20,
+              "rate": 0.2
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 20,
+              "rate": 0.1
+            },
+            "Gemma 4": {
+              "pass": 3,
+              "n": 20,
+              "rate": 0.15
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 20,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 14,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 5,
+          "models": {
+            "human": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "GPT-5.6 Luna": {
+              "pass": 3,
+              "n": 5,
+              "rate": 0.6
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Induced Confusion",
+      "group": "Atypical",
+      "n": 33,
+      "models": {
+        "human": {
+          "pass": 33,
+          "n": 33,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 20,
+          "n": 33,
+          "rate": 0.6060606060606061
+        },
+        "GPT-5.6 Sol": {
+          "pass": 12,
+          "n": 33,
+          "rate": 0.36363636363636365
+        },
+        "GPT-5.6 Luna": {
+          "pass": 6,
+          "n": 33,
+          "rate": 0.18181818181818182
+        },
+        "Gemma 4": {
+          "pass": 0,
+          "n": 33,
+          "rate": 0.0
+        },
+        "TranslateGemma": {
+          "pass": 1,
+          "n": 33,
+          "rate": 0.030303030303030304
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 33,
+          "rate": 0.030303030303030304
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 1,
+          "n": 33,
+          "rate": 0.030303030303030304
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 33,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 33,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 33,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 2,
+          "n": 27,
+          "rate": 0.07407407407407407
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 25,
+          "models": {
+            "human": {
+              "pass": 25,
+              "n": 25,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 13,
+              "n": 25,
+              "rate": 0.52
+            },
+            "GPT-5.6 Sol": {
+              "pass": 9,
+              "n": 25,
+              "rate": 0.36
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 25,
+              "rate": 0.16
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 25,
+              "rate": 0.04
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 1,
+              "n": 25,
+              "rate": 0.04
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 25,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 2,
+              "n": 19,
+              "rate": 0.10526315789473684
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "GPT-5.6 Sol": {
+              "pass": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Output: Language",
+      "group": "Constraint",
+      "n": 27,
+      "models": {
+        "human": {
+          "pass": 27,
+          "n": 27,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 17,
+          "n": 27,
+          "rate": 0.6296296296296297
+        },
+        "GPT-5.6 Sol": {
+          "pass": 10,
+          "n": 27,
+          "rate": 0.37037037037037035
+        },
+        "GPT-5.6 Luna": {
+          "pass": 5,
+          "n": 27,
+          "rate": 0.18518518518518517
+        },
+        "Gemma 4": {
+          "pass": 2,
+          "n": 27,
+          "rate": 0.07407407407407407
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 19,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 27,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 19,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 27,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 27,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 19,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 11,
+          "models": {
+            "human": {
+              "pass": 11,
+              "n": 11,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 7,
+              "n": 11,
+              "rate": 0.6363636363636364
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 11,
+              "rate": 0.18181818181818182
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 1,
+          "models": {
+            "human": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 15,
+          "models": {
+            "human": {
+              "pass": 15,
+              "n": 15,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 9,
+              "n": 15,
+              "rate": 0.6
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 15,
+              "rate": 0.4666666666666667
+            },
+            "GPT-5.6 Luna": {
+              "pass": 5,
+              "n": 15,
+              "rate": 0.3333333333333333
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 15,
+              "rate": 0.13333333333333333
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 15,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 2,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Target Gap: Not to be Translated",
+      "group": "Non-monolingual",
+      "n": 20,
+      "models": {
+        "human": {
+          "pass": 20,
+          "n": 20,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 10,
+          "n": 20,
+          "rate": 0.5
+        },
+        "GPT-5.6 Sol": {
+          "pass": 10,
+          "n": 20,
+          "rate": 0.5
+        },
+        "GPT-5.6 Luna": {
+          "pass": 7,
+          "n": 20,
+          "rate": 0.35
+        },
+        "Gemma 4": {
+          "pass": 7,
+          "n": 20,
+          "rate": 0.35
+        },
+        "TranslateGemma": {
+          "pass": 6,
+          "n": 20,
+          "rate": 0.3
+        },
+        "Tower+": {
+          "pass": 2,
+          "n": 20,
+          "rate": 0.1
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 20,
+          "rate": 0.1
+        },
+        "HY-MT2": {
+          "pass": 5,
+          "n": 20,
+          "rate": 0.25
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 20,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 20,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 17,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 11,
+          "models": {
+            "human": {
+              "pass": 11,
+              "n": 11,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "GPT-5.6 Sol": {
+              "pass": 8,
+              "n": 11,
+              "rate": 0.7272727272727273
+            },
+            "GPT-5.6 Luna": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "Gemma 4": {
+              "pass": 6,
+              "n": 11,
+              "rate": 0.5454545454545454
+            },
+            "TranslateGemma": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 2,
+              "n": 11,
+              "rate": 0.18181818181818182
+            },
+            "HY-MT2": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Tower+": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 1,
+          "models": {
+            "human": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Part of Speech",
+      "group": "Atypical",
+      "n": 18,
+      "models": {
+        "human": {
+          "pass": 18,
+          "n": 18,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 10,
+          "n": 18,
+          "rate": 0.5555555555555556
+        },
+        "GPT-5.6 Sol": {
+          "pass": 6,
+          "n": 18,
+          "rate": 0.3333333333333333
+        },
+        "GPT-5.6 Luna": {
+          "pass": 3,
+          "n": 18,
+          "rate": 0.16666666666666666
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 18,
+          "rate": 0.05555555555555555
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 18,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 15,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 5,
+          "models": {
+            "human": {
+              "pass": 5,
+              "n": 5,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 5,
+              "rate": 0.6
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 5,
+              "rate": 0.4
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 5,
+              "rate": 0.2
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 13,
+          "models": {
+            "human": {
+              "pass": 13,
+              "n": 13,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 7,
+              "n": 13,
+              "rate": 0.5384615384615384
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 13,
+              "rate": 0.3076923076923077
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 13,
+              "rate": 0.15384615384615385
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 13,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 10,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Meta Reasoning",
+      "group": "Non-compositional",
+      "n": 17,
+      "models": {
+        "human": {
+          "pass": 17,
+          "n": 17,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 4,
+          "n": 17,
+          "rate": 0.23529411764705882
+        },
+        "GPT-5.6 Sol": {
+          "pass": 7,
+          "n": 17,
+          "rate": 0.4117647058823529
+        },
+        "GPT-5.6 Luna": {
+          "pass": 4,
+          "n": 17,
+          "rate": 0.23529411764705882
+        },
+        "Gemma 4": {
+          "pass": 8,
+          "n": 17,
+          "rate": 0.47058823529411764
+        },
+        "TranslateGemma": {
+          "pass": 6,
+          "n": 17,
+          "rate": 0.35294117647058826
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 17,
+          "rate": 0.058823529411764705
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 2,
+          "n": 17,
+          "rate": 0.11764705882352941
+        },
+        "HY-MT2": {
+          "pass": 5,
+          "n": 17,
+          "rate": 0.29411764705882354
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 17,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 17,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 17,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 11,
+          "models": {
+            "human": {
+              "pass": 11,
+              "n": 11,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 11,
+              "rate": 0.2727272727272727
+            },
+            "GPT-5.6 Sol": {
+              "pass": 7,
+              "n": 11,
+              "rate": 0.6363636363636364
+            },
+            "GPT-5.6 Luna": {
+              "pass": 4,
+              "n": 11,
+              "rate": 0.36363636363636365
+            },
+            "Gemma 4": {
+              "pass": 6,
+              "n": 11,
+              "rate": 0.5454545454545454
+            },
+            "TranslateGemma": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 2,
+              "n": 11,
+              "rate": 0.18181818181818182
+            },
+            "HY-MT2": {
+              "pass": 5,
+              "n": 11,
+              "rate": 0.45454545454545453
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 11,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 6,
+          "models": {
+            "human": {
+              "pass": 6,
+              "n": 6,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 6,
+              "rate": 0.16666666666666666
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 2,
+              "n": 6,
+              "rate": 0.3333333333333333
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 6,
+              "rate": 0.16666666666666666
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 6,
+              "rate": 0.16666666666666666
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 6,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Poetry",
+      "group": "Non-compositional",
+      "n": 13,
+      "models": {
+        "human": {
+          "pass": 13,
+          "n": 13,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 5,
+          "n": 13,
+          "rate": 0.38461538461538464
+        },
+        "GPT-5.6 Sol": {
+          "pass": 3,
+          "n": 13,
+          "rate": 0.23076923076923078
+        },
+        "GPT-5.6 Luna": {
+          "pass": 1,
+          "n": 13,
+          "rate": 0.07692307692307693
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 13,
+          "rate": 0.07692307692307693
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 12,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 13,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 13,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 13,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 13,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 12,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 10,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 9,
+          "models": {
+            "human": {
+              "pass": 9,
+              "n": 9,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 3,
+              "n": 9,
+              "rate": 0.3333333333333333
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 9,
+              "rate": 0.2222222222222222
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 9,
+              "rate": 0.1111111111111111
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 9,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 4,
+          "models": {
+            "human": {
+              "pass": 4,
+              "n": 4,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 4,
+              "rate": 0.5
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 4,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 4,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Incomplete",
+      "group": "Blocker",
+      "n": 12,
+      "models": {
+        "human": {
+          "pass": 12,
+          "n": 12,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 5,
+          "n": 12,
+          "rate": 0.4166666666666667
+        },
+        "GPT-5.6 Sol": {
+          "pass": 5,
+          "n": 12,
+          "rate": 0.4166666666666667
+        },
+        "GPT-5.6 Luna": {
+          "pass": 2,
+          "n": 12,
+          "rate": 0.16666666666666666
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 12,
+          "rate": 0.08333333333333333
+        },
+        "TranslateGemma": {
+          "pass": 2,
+          "n": 12,
+          "rate": 0.16666666666666666
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 12,
+          "rate": 0.08333333333333333
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 12,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 1,
+          "n": 12,
+          "rate": 0.08333333333333333
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 12,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 12,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 3,
+          "models": {
+            "human": {
+              "pass": 3,
+              "n": 3,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 3,
+              "rate": 0.6666666666666666
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 3,
+              "rate": 0.6666666666666666
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 2,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Sol": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 1,
+          "models": {
+            "human": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Refusal",
+      "group": "Blocker",
+      "n": 8,
+      "models": {
+        "human": {
+          "pass": 8,
+          "n": 8,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 4,
+          "n": 8,
+          "rate": 0.5
+        },
+        "GPT-5.6 Sol": {
+          "pass": 1,
+          "n": 8,
+          "rate": 0.125
+        },
+        "GPT-5.6 Luna": {
+          "pass": 1,
+          "n": 8,
+          "rate": 0.125
+        },
+        "Gemma 4": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 7,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 7,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 2,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 7,
+          "models": {
+            "human": {
+              "pass": 7,
+              "n": 7,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 4,
+              "n": 7,
+              "rate": 0.5714285714285714
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "GPT-5.6 Luna": {
+              "pass": 1,
+              "n": 7,
+              "rate": 0.14285714285714285
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 7,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 2,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 1,
+          "models": {
+            "human": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Code-mixing",
+      "group": "Non-monolingual",
+      "n": 8,
+      "models": {
+        "human": {
+          "pass": 8,
+          "n": 8,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 2,
+          "n": 8,
+          "rate": 0.25
+        },
+        "GPT-5.6 Sol": {
+          "pass": 4,
+          "n": 8,
+          "rate": 0.5
+        },
+        "GPT-5.6 Luna": {
+          "pass": 2,
+          "n": 8,
+          "rate": 0.25
+        },
+        "Gemma 4": {
+          "pass": 1,
+          "n": 8,
+          "rate": 0.125
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 8,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 5,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 8,
+          "models": {
+            "human": {
+              "pass": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "GPT-5.6 Sol": {
+              "pass": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "GPT-5.6 Luna": {
+              "pass": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "Gemma 4": {
+              "pass": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 5,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Tokenization",
+      "group": "Blocker",
+      "n": 3,
+      "models": {
+        "human": {
+          "pass": 3,
+          "n": 3,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 1,
+          "n": 3,
+          "rate": 0.3333333333333333
+        },
+        "GPT-5.6 Sol": {
+          "pass": 1,
+          "n": 3,
+          "rate": 0.3333333333333333
+        },
+        "GPT-5.6 Luna": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "Gemma 4": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 3,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 3,
+          "models": {
+            "human": {
+              "pass": 3,
+              "n": 3,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 3,
+              "rate": 0.3333333333333333
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 3,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "Input: Format",
+      "group": "Constraint",
+      "n": 1,
+      "models": {
+        "human": {
+          "pass": 1,
+          "n": 1,
+          "rate": 1.0
+        },
+        "Gemini 3.1 Pro": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "GPT-5.6 Sol": {
+          "pass": 1,
+          "n": 1,
+          "rate": 1.0
+        },
+        "GPT-5.6 Luna": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "Gemma 4": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "TranslateGemma": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "Tower+": {
+          "pass": 1,
+          "n": 1,
+          "rate": 1.0
+        },
+        "Seed-X-PPO-7B": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "HY-MT2": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "Command A Translate": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "NLLB 3.3B": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        },
+        "Google Translate": {
+          "pass": 0,
+          "n": 1,
+          "rate": 0.0
+        }
+      },
+      "by_direction": {
+        "en→x": {
+          "n_examples": 1,
+          "models": {
+            "human": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "GPT-5.6 Sol": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Tower+": {
+              "pass": 1,
+              "n": 1,
+              "rate": 1.0
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 1,
+              "rate": 0.0
+            }
+          }
+        },
+        "x→en": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        },
+        "x→y": {
+          "n_examples": 0,
+          "models": {
+            "human": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemini 3.1 Pro": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Sol": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "GPT-5.6 Luna": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Gemma 4": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "TranslateGemma": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Tower+": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Seed-X-PPO-7B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "HY-MT2": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Command A Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "NLLB 3.3B": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            },
+            "Google Translate": {
+              "pass": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        }
+      }
+    }
+  ],
+  "adjusted": {
+    "min_n": 8,
+    "models": {
+      "human": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 1.0,
+          "x→en": 0.9977710039502203,
+          "x→y": 1.0
+        }
+      },
+      "Gemini 3.1 Pro": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.2524124975281788,
+          "x→en": 0.32449903712304523,
+          "x→y": 0.49668931030057667
+        }
+      },
+      "GPT-5.6 Sol": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.344133544262079,
+          "x→en": 0.21016725432822714,
+          "x→y": 0.3744593884149042
+        }
+      },
+      "GPT-5.6 Luna": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.13601514167066867,
+          "x→en": 0.10453832483213407,
+          "x→y": 0.19583191551896145
+        }
+      },
+      "Gemma 4": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.09767884215184988,
+          "x→en": 0.05842458518954973,
+          "x→y": 0.08674585729129151
+        }
+      },
+      "TranslateGemma": {
+        "n_tags": 6,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends"
+        ],
+        "by_direction": {
+          "en→x": 0.20274758634064066,
+          "x→en": 0.029412572417423018,
+          "x→y": 0.07983332507863757
+        }
+      },
+      "Tower+": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.05782531521606072,
+          "x→en": 0.01070321444773282,
+          "x→y": 0.011026373417118918
+        }
+      },
+      "Seed-X-PPO-7B": {
+        "n_tags": 6,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends"
+        ],
+        "by_direction": {
+          "en→x": 0.04323472609314106,
+          "x→en": 0.014375100347117335,
+          "x→y": 0.0
+        }
+      },
+      "HY-MT2": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.05134043334557474,
+          "x→en": 0.010637161891320366,
+          "x→y": 0.0025944968104351135
+        }
+      },
+      "Command A Translate": {
+        "n_tags": 7,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends",
+          "Irrelevant"
+        ],
+        "by_direction": {
+          "en→x": 0.02387073081160485,
+          "x→en": 0.0057489064198337,
+          "x→y": 0.0
+        }
+      },
+      "NLLB 3.3B": {
+        "n_tags": 6,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Conventions",
+          "Cultural Artifact",
+          "False Friends"
+        ],
+        "by_direction": {
+          "en→x": 0.04247782493552752,
+          "x→en": 0.006922392351872085,
+          "x→y": 0.0
+        }
+      },
+      "Google Translate": {
+        "n_tags": 4,
+        "tags": [
+          "Metaphor",
+          "Collocation",
+          "Polysemy",
+          "Cultural Artifact"
+        ],
+        "by_direction": {
+          "en→x": 0.0,
+          "x→en": 0.0020369634340222575,
+          "x→y": 0.0
+        }
+      }
+    }
+  }
+}

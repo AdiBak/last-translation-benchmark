@@ -128,6 +128,11 @@ async def serve_leaderboard_results():
     return FileResponse(_STATIC_DIR + "/leaderboard-results.html")
 
 
+@app.get("/phenomena")
+async def serve_phenomena():
+    return FileResponse(_STATIC_DIR + "/phenomena.html")
+
+
 # redirect favicon.ico to assets/favicon.svg to avoid 404 errors in logs
 @app.get("/favicon.ico")
 async def serve_favicon():
